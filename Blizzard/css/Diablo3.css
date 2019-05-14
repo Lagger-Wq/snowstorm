@@ -1,0 +1,844 @@
+		/*暗黑破坏神3*/
+		
+		@media screen and (min-width: 1500px) {
+			.banner{
+				width:100%;
+			}
+		}
+		@media screen and (min-width: 1200px){
+			
+		}
+		body,
+		html {
+			width: 100%;
+			background-color: #12110F;
+		}
+		body {
+			min-width: 1200px;
+		}
+		/*顶部导航栏*/
+		
+		.top {
+			width: 1278px;
+			height: 40px;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.top-left-logo {
+			width: 65px;
+			height: 40px;
+			overflow: hidden;
+			position: absolute;
+		}
+		
+		.top-left-logo img {
+			position: absolute;
+			top: -75px;
+			left: -18px;
+		}
+		
+		.top-left-nav {
+			position: absolute;
+			top: 10px;
+			left: 62px;
+		}
+		
+		.top a {
+			display: block;
+			float: left;
+			text-decoration: none;
+			color: #ACB7B8;
+			margin-left: 20px;
+		}
+		
+		.top a:hover {
+			color: white;
+		}
+		
+		.top-right {
+			position: absolute;
+			right: 20px;
+			top: 10px;
+		}
+		/*banner*/
+		
+		.banner {
+			width: 100%;
+			min-width: 1278px;
+			height: 560px;
+			background-image: url(../img/Diablo3/1-1.jpg);
+			background-size: 100% 100%;
+		}
+		
+		.banner-container {
+			width: 1278px;
+			height: 560px;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		.banner-container img {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 50px;
+		}
+		
+		.banner-hover {
+			display: block;
+		}
+		/*nav*/
+		
+		.nav {
+			width: 100%;
+			height: 86px;
+			background: url(../img/Diablo3/2-2.png) no-repeat 50% 0;
+			margin: 0 auto;
+			min-width: 1278px;
+		}
+		
+		#nav {
+			z-index: 999;
+			width: 100%;
+			height: 86px;
+			background: url(../img/Diablo3/2-2.png) no-repeat 50% 0;
+			margin: 0 auto;
+		}
+		
+		.nav-list {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		
+		.nav-list li {
+			width: 150px;
+			height: 46px;
+			line-height: 46px;
+			text-align: center;
+			display: block;
+			float: left;
+			margin-top: 10px;
+			background: url(../img/Diablo3/2-3.png) no-repeat left 0;
+		}
+		
+		.nav-list li a {
+			display: block;
+			float: left;
+			width: 150px;
+			height: 46px;
+		}
+		
+		.nav-list li a:hover {
+			background: rgba(0, 0, 0, .3);
+			box-shadow: 0 0 9px #000 inset;
+		}
+		
+		.home a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: 24px 0;
+		}
+		
+		.home a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: 24px -92px;
+		}
+		
+		.news a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -84px 0;
+		}
+		
+		.news a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -84px -46px;
+		}
+		
+		.game a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -207px 0;
+		}
+		
+		.game a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -207px -46px;
+		}
+		
+		.sort a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -1458px 0;
+		}
+		
+		.sort a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -1458px -46px;
+		}
+		
+		.video a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -347px 0;
+		}
+		
+		.video a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -347px -46px;
+		}
+		
+		.load a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -480px 0;
+		}
+		
+		.load a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -480px -46px;
+		}
+		
+		.talk a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -607px 0;
+		}
+		
+		.talk a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -607px -46px;
+		}
+		
+		.purchase a span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -1119px 0;
+		}
+		
+		.purchase a span:hover {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -999em;
+			cursor: pointer;
+			background: url(../img/Diablo3/icons.png) no-repeat 0 0;
+			background-position: -1119px -46px;
+		}
+		/*主体内容*/
+		
+		.content {
+			width: 1195px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		/*主体左部分*/
+		
+		.content-left {
+			width: 857px;
+			float: left;
+		}
+		
+		.smallEyes {
+			overflow: hidden;
+		}
+		
+		.smallEyes a {
+			width: 274px;
+			margin-left: 13px;
+			display: block;
+			float: left;
+			color: #c8792b;
+			text-decoration: none;
+			font-size: 18px;
+			position: relative;
+		}
+		
+		.img-border {
+			background: url(../img/Diablo3/3-0.png) no-repeat 0 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 87%;
+		}
+		
+		.smallEyes a:nth-of-type(1) {
+			margin-left: 0px;
+		}
+		
+		.smallEyes img {
+			width: 100%;
+		}
+		
+		.smallEyes p {
+			padding-top: 5px;
+		}
+		
+		.small-item1:hover>p {
+			color: white;
+		}
+		
+		.content-list {
+			position: relative;
+			overflow: hidden;
+			width: 840px;
+			height: 138px;
+			margin-top: 12px;
+			padding-top: 30px;
+			background: url(../img/Diablo3/news-line.jpg) repeat-x 0 top;
+		}
+		
+		.img-item {
+			width: 206px;
+			height: 106px;
+		}
+		
+		.list_img {
+			width: 206px;
+			height: 106px;
+			border: 1px solid #2F2721;
+		}
+		
+		.list-text {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			height: 130px;
+			overflow: hidden;
+		}
+		
+		.list-text a {
+			text-decoration: none;
+		}
+		
+		.list-text h3 {
+			margin-top: 25px;
+			font-size: 18px;
+			color: #A08D6D;
+		}
+		
+		.list_item P {
+			width: 600px;
+			font-size: 14px;
+			height: 38.4px;
+			color: #999999;
+			margin-top: 10px;
+		}
+		
+		.list_item:hover>h3 {
+			color: white;
+		}
+		
+		.time span:nth-of-type(2) {
+			font-size: 12px;
+			display: block;
+			color: #6F9CA2;
+			padding-top: 14px;
+			padding-left: 50px;
+		}
+		
+		.first-talkbox {
+			width: 12px;
+			height: 12px;
+			background: url(../img/Diablo3/talkbox.gif) no-repeat 0 -12px;
+			position: absolute;
+			left: 5px;
+			top: 114px;
+		}
+		
+		.first-talkbox:before {
+			content: "8";
+			position: absolute;
+			left: 15px;
+			top: -3px;
+			font-size: 12px;
+			color: #6F9CA2;
+		}
+		
+		.time:hover .first-talkbox {
+			background: url(../img/Diablo3/talkbox.gif) no-repeat 0px 0px;
+		}
+		
+		.second-link {
+			width: 82px;
+			height: 86px;
+			background: url(../img/Diablo3/comment_link.png) no-repeat -41px 0px;
+			position: absolute;
+			left: -7px;
+			top: 94px;
+			overflow: hidden;
+		}
+		
+		.time:hover .second-link {
+			background: url(../img/Diablo3/comment_link.png) no-repeat -41px -35px;
+		}
+		
+		.morenews {
+			margin: 0 auto;
+			width: 662px;
+			height: 45px;
+			background-color: #0B0A09;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			line-height: 45px;
+			text-align: center;
+		}
+		
+		.morenews a {
+			color: #DC8129;
+		}
+		
+		.morenews a:hover {
+			color: white;
+		}
+		/*主体右部分*/
+		
+		.content-right {
+			width: 338px;
+			/*background-color: antiquewhite;*/
+			float: left;
+			overflow: hidden;
+		}
+		
+		.diablo-login {
+			width: 322px;
+			height: 94px;
+			line-height: 94px;
+			position: relative;
+			left: 17px;
+			top: 0;
+			background: url(../img/Diablo3/5-1.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		.login-text span {
+			color: #F5902D;
+		}
+		
+		.login-text {
+			color: #90A1A1;
+			margin-left: 30px;
+			float: left;
+		}
+		
+		.login-text:hover {
+			color: rgb(255, 255, 255);
+		}
+		
+		.login-text:hover span {
+			color: white;
+			cursor: pointer;
+		}
+		
+		.login-img {
+			width: 74px;
+			height: 74px;
+			overflow: hidden;
+			position: absolute;
+			left: 222px;
+			top: 15px;
+		}
+		
+		.register {
+			position: relative;
+			left: 17px;
+			top: 0;
+			width: 322px;
+			height: 65px;
+			background: url(../img/Diablo3/5-3.png) no-repeat 0px 0;
+			overflow: hidden;
+		}
+		
+		.register:hover {
+			background: url(../img/Diablo3/5-3.png) no-repeat -325px 0;
+		}
+		
+		.blinds {
+			padding-top: 100px;
+			width: 349px;
+			background: url(../img/Diablo3/5-5.png) repeat-y;
+			overflow: hidden;
+		}
+		
+		.drag_soul {
+			width: 349px;
+			height: 182px;
+			padding-top: 10px;
+			background: url(../img/Diablo3/5-4.jpg) no-repeat;
+		}
+		
+		.drag_soul h3 {
+			padding-top: 10px;
+			display: block;
+			color: #A99877;
+			padding-left: 50px;
+			display: flex;
+			line-height: 33px;
+		}
+		
+		.drag_soul h3 .minImg {
+			width: 35px;
+			height: 31px;
+			display: block;
+			background-image: url(../img/Diablo3/icons2.png);
+			background-repeat: no-repeat;
+			background-position: 5px -85px;
+		}
+		
+		.drag_soul:hover .minImg {
+			background-position: 0px -125px;
+		}
+		
+		.drag_soul:hover .shade {
+			background-color: transparent;
+			border: 1px solid #554031;
+		}
+		
+		.drag_soul_img {
+			width: 302px;
+			height: 114px;
+			margin: 0 auto;
+			margin-top: 10px;
+			border: 1px solid #32241E;
+		}
+		
+		.shade {
+			width: 302px;
+			height: 114px;
+			background-color: rgb(0, 0, 0, 0.2);
+		}
+		
+		.img1 {
+			background: url(../img/Diablo3/5-7.jpg) no-repeat 0 0;
+		}
+		
+		.img2 {
+			background: url(../img/Diablo3/5-6.jpg) no-repeat 26px 15px;
+		}
+		
+		.img3 {
+			background: url(../img/Diablo3/5-8.jpg) no-repeat 0 0;
+		}
+		
+		.img4 {
+			background: url(../img/Diablo3/5-9.jpg) no-repeat 0 0;
+		}
+		
+		.img5 {
+			background: url(../img/Diablo3/5-10.jpg) no-repeat 0 0;
+		}
+		
+		.img6 {
+			background: url(../img/Diablo3/4-5.jpg) no-repeat 0 0;
+		}
+		
+		.img7 {
+			background: url(../img/Diablo3/5-12.jpg) no-repeat 0 0;
+		}
+		
+		.img8 {
+			background: url(../img/Diablo3/5-13.jpg) no-repeat 0 0;
+		}
+		
+		.img9 {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		
+		.app span {
+			display: block;
+			width: 27px;
+			height: 27px;
+			float: left;
+			margin-right: 10px;
+			overflow: hidden;
+		}
+		
+		.weixin {
+			background: url(../img/Diablo3/icons3.png) no-repeat 0 0;
+			background-position: 0px 0px;
+		}
+		
+		.app:hover .weixin {
+			background-position: 0 -27px;
+			animation: roll 0.5s linear 1;
+			transition: background-position 0.3s;
+		}
+		
+		.tieba {
+			background: url(../img/Diablo3/icons3.png) no-repeat 0 0;
+			background-position: -27px 0px;
+		}
+		
+		.app:hover .tieba {
+			background-position: -27px -27px;
+			transition: background-position 0.3s;
+		}
+		
+		.xinlang {
+			background: url(../img/Diablo3/icons3.png) no-repeat 0 0;
+			background-position: -54px 0px;
+		}
+		
+		.app:hover .xinlang {
+			background-position: -54px -27px;
+			transition: background-position 0.3s;
+		}
+		
+		.emall {
+			background: url(../img/Diablo3/icons3.png) no-repeat 0 0;
+			background-position: -81px 0px;
+		}
+		
+		.app:hover .emall {
+			background-position: -81px -27px;
+			transition: background-position 0.3s;
+		}
+		
+		.phone {
+			background: url(../img/Diablo3/icons3.png) no-repeat 0 0;
+			background-position: -134px 0px;
+		}
+		
+		.app:hover .phone {
+			background-position: -134px -27px;
+			transition: background-position 0.3s;
+		}
+		
+		.app {
+			width: 94px;
+		}
+		
+		.app a {
+			text-decoration: none;
+			color: #999;
+			font-size: 14px;
+		}
+		
+		.app a:hover {
+			color: white;
+			animation: roll 0.5s linear 1;
+		}
+		
+		footer {
+			width: 100%;
+			min-width: 1278px;
+			height: 400px;
+			margin-top: 50px;
+			background: url(../img/Diablo3/6-3.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		.foot-border {
+			width: 100%;
+			height: 17px;
+			margin-top: -18px;
+			margin: 0 auto;
+		}
+		
+		.foot-border1 {
+			position: absolute;
+			top: -42px;
+			left: 47%;
+		}
+		
+		.foot-container {
+			width: 100%;
+			height: 370px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.foot-top-text {
+			width: 1195px;
+			height: 84px;
+			margin-top: 80px;
+			margin-left: 50px;
+		}
+		
+		.foot-top-text a {
+			text-decoration: none;
+			color: white;
+		}
+		
+		.first_a {
+			margin-left: 30px;
+		}
+		
+		.item-a {
+			width: 150px;
+			display: block;
+			float: left;
+		}
+		
+		.item-a span {
+			display: block;
+			width: 19px;
+			height: 19px;
+			float: left;
+			padding-left: 10px;
+			overflow: hidden;
+		}
+		
+		.first_a span {
+			background: url(../img/Diablo3/6-4.png) no-repeat 0px -5px;
+		}
+		
+		.second_a span {
+			background: url(../img/Diablo3/6-4.png) no-repeat -35px -5px;
+		}
+		
+		.third_a span {
+			background: url(../img/Diablo3/6-4.png) no-repeat -64px -5px;
+		}
+		
+		.item-a e {
+			display: block;
+			float: left;
+		}
+		
+		.fourth_a {
+			float: right;
+		}
+		
+		.foot_center {
+			margin-top: 35px;
+			width: 1278px;
+			height: 143px;
+		}
+		
+		.img-contanier {
+			margin-left: 200px;
+			float: left;
+			overflow: hidden;
+		}
+		.img-contanier div{
+			float: left;
+		}
+		.img-contanier div:nth-of-type(2){
+			margin-top: 35px;
+		}
+		.copyright1 {
+			width: 643px;
+			height: 143px;
+			float: right;
+			margin-right: 10px;
+		}
+		
+		.copyright1 p {
+			font-size: 12px;
+			color: #515151;
+			color: #515151;
+			height: 25px;
+		}
+		
+		.title {
+			padding-left: 5px;
+			color: #CCCCCC;
+		}
+		
+		.title a {
+			text-decoration: none;
+			color: #CCCCCC;
+			font-size: 14px;
+		}
+		
+		.copyright {
+			width: 1195px;
+			height: 85px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		
+		.copyright p {
+			text-align: center;
+			font-size: 12px;
+			color: #515151;
+		}
+		.copyright a{
+			display: block;
+		}
+		.fgottop {
+			width: 57px;
+			height: 59px;
+			background: url(../img/Diablo3/Fgotop.png) no-repeat 0 0;
+			overflow: hidden;
+			position: fixed;
+			bottom: 35px;
+			right: 10px;
+		}
+		
+		.fgottop:hover {
+			background: url(../img/Diablo3/Fgotop.png) no-repeat 0 -59px;
+		}

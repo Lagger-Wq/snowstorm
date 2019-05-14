@@ -1,0 +1,1044 @@
+/*魔兽争霸*/
+
+
+/*共同样式*/
+
+body {
+	min-width: 1200px;
+	background-color: rgb(0, 0, 0);
+}
+/*顶部导航*/
+
+.head_nav {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(37, 37, 37);
+	display: flex;
+	justify-content: flex-start;
+	font-size: 15px;
+	color: rgb(178, 179, 180);
+	line-height: 40px;
+	position: relative;
+	border-bottom: 1px solid rgb(70, 70, 70);
+	z-index: 999;
+}
+
+.head_nav div {
+	margin-left: 35px;
+	cursor: pointer;
+}
+.head_nav a{
+	color:  rgb(178, 179, 180);
+	text-decoration: none;
+}
+.head_nav .my {
+	position: absolute;
+	top: 0;
+	right: 70px;
+}
+
+.head_nav .my span {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	font-size: 25px;
+	transform: rotate(90deg);
+}
+
+.head_nav .support {
+	position: absolute;
+	top: 0;
+	right: 160px;
+}
+
+.head_nav div:hover {
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.head_nav .logo {
+	width: 100px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+.head_nav .logo img {
+	position: absolute;
+	bottom: -5px;
+}
+
+
+/*固定二级导航*/
+
+#nav {
+	position: fixed;
+	top: 80px;
+	width: 100%;
+	height: 45px;
+	background-color: transparent;
+	display: flex;
+	justify-content: flex-start;
+	transition: .3s linear;
+}
+
+#nav div {
+	font-size: 15px;
+	font-weight: 600;
+	margin-left: 20px;
+	text-indent: 20px;
+	line-height: 45px;
+	border-left: 1.5px solid rgba(255, 255, 255, .5);
+	color: rgb(228, 228, 212);
+}
+
+#nav .nav_frist {
+	margin-left: 30px;
+	border-left: 0;
+}
+
+
+/*视频*/
+
+.banner {
+	width: 100%;
+	height: 825px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+/*动画*/
+
+.video {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.banner .banner_logo {
+	width: 600px;
+	display: block;
+	margin: auto;
+	margin-top: 80px;
+}
+
+.banner_minTitle {
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	text-shadow: 3px 4px 1px rgb(0, 0, 0);
+}
+
+.banner_maxTitle {
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+	text-shadow: 3px 4px 1px rgb(0, 0, 0);
+}
+
+.right_off {
+	margin: 0 auto;
+	margin-top: 60px;
+	width: 250px;
+	height: 75px;
+	font-size: 25px;
+	background-image: url(../img/index/right.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	box-shadow: 0px 0px 60px rgb(254, 184, 50);
+	border: 2px solid rgb(0, 0, 0);
+}
+
+
+/*------------主体内容公共样式----------*/
+
+.item_title {
+	font-size: 20px;
+	text-align: center;
+	color: rgb(248, 183, 0);
+	margin-top: 55px;
+}
+
+.item_content {
+	font-size: 45px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.item_img {
+	display: block;
+	margin: 15px auto;
+}
+
+.item_txt {
+	margin-top: 5px;
+	font-size: 17px;
+	text-align: center;
+	color: rgb(217, 211, 195);
+}
+
+
+/*first*/
+
+.first {
+	width: 100%;
+	height: 850px;
+	overflow: hidden;
+}
+
+.title_img {
+	width: 100%;
+	height: 26px;
+	background-image: url(../img/Warcraft/1-1.png);
+	background-repeat-x: initial;
+	background-size: auto 30px;
+	margin-top: -4px;
+}
+
+.first_content {
+	height: 840px;
+	background-image: url(../img/Warcraft/1-2.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.first_box {
+	margin-top: 45px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.first_box .first_box_show {
+	width: -webkit-calc(50% - 17px);
+	width: calc(50% - 17px);
+	border: 2px solid rgb(76, 64, 54);
+	overflow: hidden;
+}
+
+.first_box .first_box_show img {
+	display: block;
+	width: 100%;
+}
+
+.first_footer {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.first_minImg {
+	margin-left: 15px;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/Warcraft/icons.png);
+	background-repeat: no-repeat;
+}
+
+.first_minImg:nth-of-type(1) {
+	background-position: -594px -386px;
+}
+
+.first_minImg:nth-of-type(2) {
+	background-position: -594px -313px;
+}
+
+.first_minImg:nth-of-type(3) {
+	background-position: -594px -462px;
+}
+
+.first_minImg:nth-of-type(4) {
+	background-position: -594px -255px;
+}
+
+.first_footer .first_footer_txt {
+	font-size: 15px;
+	color: rgb(217, 211, 195);
+	line-height: 35px;
+	margin-left: 5px;
+}
+
+.first_footer .first_footer_txt:last-child {
+	margin-right: 80px;
+}
+
+
+/*--------------secound-------------*/
+
+.secound {
+	width: 100%;
+	overflow: hidden;
+}
+
+.secound_content {
+	width: 100%;
+	height: 1080px;
+	background-color: rgb(0, 0, 0);
+	-webkit-mask: ;
+	background-image: url(../img/Warcraft/2-1.jpg);
+	background-repeat: no-repeat;
+	background-size: 150% 120%;
+	background-position: -350px -100px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.secound_box {
+	overflow: hidden;
+	width: 750px;
+	margin-right: 60px;
+}
+
+.secound_box .secound_video {
+	margin-top: 60px;
+	position: relative;
+	height: 420px;
+	overflow: hidden;
+	border: 2px solid rgb(100, 129, 109);
+	/*------差一个阴影效果----------*/
+}
+
+.secound_box .secound_video video {
+	width: 746px;
+	height: 620px;
+	position: absolute;
+	top: -82px;
+	object-fit: fill;
+}
+
+.secound_name {
+	margin-top: 20px;
+	font-size: 15px;
+	color: rgb(141, 151, 164);
+	text-align: center;
+}
+
+.secound_txt {
+	margin-top: 40px;
+	color: rgb(217, 211, 195);
+	font-size: 18px;
+}
+
+.secound_item {
+	margin-top: 35px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.seound_item_img {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url(../img/Warcraft/2-3.jpg);
+	background-repeat: no-repeat;
+	background-size: 260px 65px;
+}
+
+.item_img01 {
+	background-position: 2px -1px;
+}
+
+.item_img02 {
+	background-position: -60px 1px;
+}
+
+.item_img03 {
+	background-position: -130px -1px;
+}
+
+.item_img04 {
+	background-position: -190px -1px;
+}
+
+.seound_item_img img {
+	height: 72px;
+}
+
+.secound_item_box .secound_item_title {
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 700;
+	color: rgb(217, 211, 195);
+}
+
+.secound_item_box .secound_item_content {
+	margin-left: 10px;
+	color: rgb(217, 211, 195);
+}
+
+
+/*----------------thirth--------------*/
+
+.thirth {
+	width: 100%;
+	overflow: hidden;
+}
+
+.thirth_content {
+	width: 100%;
+	height: 1080px;
+	background-image: url(../img/Warcraft/3-1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.thirth_vedio {
+	width: 1280px;
+	height: 620px;
+	margin: 0 auto;
+	margin-top: 40px;
+	border: 2px solid rgb(85, 90, 100);
+}
+
+.thirth_vedio video {
+	width: 1276px;
+	height: 100%;
+	object-fit: fill;
+}
+
+
+/*fourth*/
+
+.fourth {
+	width: 100%;
+}
+
+.fourth_content {
+	height: 310px;
+	background-image: url(../img/Warcraft/4-1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.fourth_box {
+	width: 100%;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.fourth_box div {
+	width: 320px;
+	height: 190px;
+	border: 2px solid rgb(60, 73, 56);
+	overflow: hidden;
+	margin: 0 20px;
+}
+
+.fourth_box div img {
+	width: 100%;
+	height: 100%;
+}
+
+.fourth_btn {
+	position: absolute;
+	top: 190px;
+	left: 50%;
+	margin-left: -86px;
+	border: 2px solid rgb(0, 0, 0);
+	box-shadow: 0 0 60px rgb(53, 87, 187);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.fourth_btn img {
+	display: block;
+}
+
+
+/*-------------fifth-----------*/
+
+.fifth {
+	width: 100%;
+	overflow: hidden;
+}
+
+.fifth_content_top {
+	height: 880px;
+	background-image: url(../img/Warcraft/5-1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.fifth .fifth_content_top .item_title {
+	margin-top: 150px
+}
+
+.fifth_box {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fifth_box .fifth_box_left {
+	width: 520px;
+}
+
+.fifth_box .fifth_box_left div {
+	font-size: 18px;
+	color: rgb(217, 200, 152);
+	display: flex;
+	margin-top: 20px;
+}
+
+.fifth_box .fifth_box_left div p {
+	width: 40px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.fifth_box .fifth_box_left div p img {
+	width: 40px;
+	height: 30px;
+}
+
+.fifth_box .fifth_box_left p:nth-of-type(1) {
+	font-size: 17px;
+	color: rgb(217, 211, 195);
+}
+
+.fifth_box_right {
+	width: 800px;
+}
+
+.fifth_box_right video {
+	width: 800px;
+	height: 500px;
+	border: 2px solid rgb(94, 89, 94);
+	box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+.fifth_box_right p {
+	text-align: center;
+	margin-top: 10px;
+	color: rgb(217, 211, 195);
+}
+
+.fifth_content_bottom {
+	height: 1080px;
+	background-image: url(../img/Warcraft/5-2.jpg);
+	background-repeat: no-repeat;
+}
+
+.fifth_bottom_item {
+	width: 90%;
+	height: 495px;
+	margin: 0 auto;
+	background-color: rgb(255, 255, 255, .1);
+	background-image: url(../img/Warcraft/5-4.jpg);
+	background-size: 100% 100%;
+	border: 2px solid rgb(94, 89, 94);
+}
+
+.tips_item {
+	margin-top: 60px;
+	margin-left: 80px;
+	width: 600px;
+}
+
+.tips_item_title {
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+}
+
+.tips_item .tips_content {
+	margin-top: 20px;
+	color: rgb(217, 211, 195);
+}
+
+.tips_item_name {
+	margin-top: 50px;
+	color: rgb(177, 165, 155);
+}
+
+.tips_item_box {
+	margin-top: 10px;
+	display: flex;
+}
+
+.loops {
+	width: 120px;
+	margin-left: 30px;
+}
+
+.loops p:nth-of-type(1) {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-image: url(../img/Warcraft/5-5.jpg);
+	background-size: 432px 432px;
+	overflow: hidden;
+	position: relative;
+}
+
+.loops .lend {
+	background-position: 10px 5px;
+}
+
+.loops .lendTo {
+	background-position: -105px 5px;
+}
+
+.loops .lendThree {
+	background-position: -210px 5px;
+}
+
+.loops .lendFour {
+	background-position: -320px 5px;
+}
+
+.loops p img {
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	height: 124px;
+}
+
+.loops p:nth-of-type(2) {
+	color: rgb(215, 209, 193);
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#rightGo {
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#rightGo .tips_item {
+	margin-right: 80px;
+}
+
+.loops .lend2 {
+	background-position: 9px -100px;
+}
+
+.loops .lendTo2 {
+	background-position: -105px -100px;
+}
+
+.loops .lendThree2 {
+	background-position: -210px -100px;
+}
+
+.loops .lendFour2 {
+	background-position: -320px -100px;
+}
+
+
+/*-------------------sixth----------------*/
+
+.sixth {
+	width: 100%;
+}
+
+.six_content {
+	height: 3120px;
+	background-image: url(../img/Warcraft/6-1.jpg);
+	background-size: 100% initial;
+	overflow: hidden;
+}
+
+.race-title {
+	margin-top: 80px;
+	text-align: center;
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+}
+
+.race {
+	width: 800px;
+	height: 280px;
+	margin: 0 auto;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.race .container {
+	display: block;
+	text-decoration: none;
+}*/
+
+.race-item {
+	width: 120px;
+	height: 140px;
+	position: relative;
+}
+.race-face-circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.face1 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat 0px -120px;
+	background-size: 400% 400%;
+}
+
+.face2 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -120px -120px;
+	background-size: 400% 400%;
+}
+
+.face3 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -240px -120px;
+	background-size: 400% 400%;
+}
+
+.face4 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -360px -120px;
+	background-size: 400% 400%;
+}
+
+.race-face-circle>span {
+	width: 140px;
+	height: 140px;
+	background: url(../img/Warcraft/2-2.png) no-repeat;
+	background-size: 200% 100%;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+}
+
+.race-item p {
+	margin-top: 40px;
+	color: #D8D2C2;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+}
+.race-item:hover .race-face-circle>span {
+	background: url(../img/Warcraft/2-2.png) no-repeat -140px 0px;
+	background-size: 200% 100%;
+}
+
+.race-item:hover p {
+	color: #FFA248;
+}
+
+
+.race-img_contanier{
+	width: 1168px;
+	height: 600px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.race-img {
+	width: 1168px;
+	height: 600px;
+	position: relative;
+}
+.img_item {
+	width: 1168px;
+	height: 600px;
+	padding-left: 50px;
+	float: left;
+	position: absolute;
+}
+
+.img1 {
+	background: url(../img/Warcraft/6-2.jpg) no-repeat;
+	background-size: 200% 100%;
+	z-index: 2;
+}
+.img2 {
+	background: url(../img/Warcraft/6-3.jpg) no-repeat;
+	background-size: 200% 100%;
+}
+.img3 {
+	background: url(../img/Warcraft/6-4.jpg) no-repeat;
+	background-size: 200% 100%;
+}
+.img4 {
+	background: url(../img/Warcraft/6-5.jpg) no-repeat;
+	background-size: 200% 100%;
+}
+.img_item h2 {
+	margin-top: 100px;
+	color: #9AACB5;
+	font-size: 25px;
+	height: 50px;
+}
+
+.img_item p {
+	margin-top: 20px;
+	color: #A4CFDF;
+	width: 400px;
+	height: 200px;
+}
+.race-item:hover .race-img{
+	margin-left: 0;
+}
+.race-item:hover .race-img{
+	margin-left: -1168px;
+}
+.race-item:hover .race-img{
+	margin-left: -2336px;
+}
+.hero_race {
+	margin-top: 80px;
+	margin-left: 80px;
+}
+
+.bg{
+	width: 100%;
+	height: 1200px;
+	background: url(../img/Warcraft/hero1.png) no-repeat;
+	background-size: 1200px 800px;
+	background-position: 240px 200px;
+}
+.hero_container {
+	width: 92%;
+	height: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.hero-title {
+	font-size: 38px;
+	margin-top: 100px;
+	margin-left: 120px;
+	margin-bottom: 40px;
+	color: rgb(255,255,255);
+}
+
+.race-item .hero-p {
+	width: 200px;
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.hero1 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -360px -360px;
+	background-size:400% 400% ;
+}
+
+.hero2 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -240px -360px;
+	background-size:400% 400% ;
+}
+
+.hero3 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -120px -360px;
+	background-size:400% 400% ;
+}
+
+.hero4 {
+	background: url(../img/Warcraft/5-5.jpg) no-repeat -0px -360px;
+	background-size:400% 400% ;
+}
+.hero1,.hero2,.hero3,.hero4{
+	margin-top: 40px;
+}
+.hero_text {
+	width: 90%;
+	height: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.hero_text div {
+	width: 40%;
+	height: 250px
+}
+
+.f1 h2 {
+	font-size: 30px;
+	color: white;
+}
+
+.f1 p {
+	margin-top: 25px;
+	font-size: 18px;
+	color: #D9D3C3;
+}
+
+.hero_text1,
+.hero_text3 {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.hero_text4 {
+	background: url(../img/Warcraft/6-7.jpg) no-repeat;
+	background-size: 100% 100%;
+	margin-top: -40px;
+}
+
+
+/*------------eventh------------*/
+
+.eventh {
+	width: 100%;
+	overflow: hidden;
+}
+
+.eventh_content {
+	height: 820px;
+	position: relative;
+	overflow: hidden;
+}
+
+.eventh_video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.eventh_content .text {
+	margin-top: 170px;
+}
+
+.item_content_text {
+	width: 760px;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.item_content_text_item {
+	width: 370px;
+	height: 260px;
+	float: left;
+	padding-left: 10px;
+	margin-top: 20px;
+	color: #D3C394;
+}
+
+.item_content_text_item p {
+	margin-top: 8px;
+	position: relative;
+}
+
+.item_content_text_item p span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/Warcraft/icons.png) no-repeat -25px -280px;
+	overflow: hidden;
+	position: absolute;
+	left: -30px;
+	top: -8px;
+}
+
+
+/*------------eighth---------*/
+
+.eighth {
+	width: 100%;
+}
+
+.eighth_content {
+	height: 840px;
+	background-image: url(../img/Warcraft/7-1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.eighth_content p{
+	text-align: center;
+}
+.title1 {
+	margin-top: 100px;
+}
+
+.link {
+	width: 256px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.link_weibo,
+.link_weixin {
+	display: block;
+	width: 128px;
+	height: 100px;
+	overflow: hidden;
+	float: left;
+}
+
+.link_weibo {
+	background: url(../img/Warcraft/7-2.png) no-repeat 58px 0px;
+	background-size: 100% 70%;
+}
+
+.link_weixin {
+	background: url(../img/Warcraft/7-2.png) no-repeat -54px 0px;
+	background-size: 100% 70%;
+}
+.foot_img_contanier{
+	width: 250px;
+	height: 65px;
+	margin: 0 auto;
+}
+.foot_img_contanier a:nth-of-type(1){
+	width: 124px;
+	height: 65px;
+	background: url(../img/Warcraft/7-3.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+}
+.foot_img_contanier a:nth-of-type(2){
+	width: 125px;
+	height: 38px;
+	background: url(../img/Warcraft/7-4.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+}
+.foot_bigfont{
+	text-align: center;
+	color: #CCCCCC;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.foot_text_item{
+	color: #79706A;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+/*.anchor{
+	width: 100%;
+	margin-top: 100px;
+}*/
+.anchor{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: black;
+	background-color: #524D4B;
+	text-decoration: none;
+	display: block;
+	float: right;
+	margin-right: 20px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}

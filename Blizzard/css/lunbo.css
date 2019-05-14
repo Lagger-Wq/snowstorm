@@ -1,0 +1,49 @@
+.slider-outer{
+    width: 100%;
+    height: 810px;
+    margin: 150px auto;
+    background-color: #f60;
+    position: relative;
+    margin-bottom: 150px;
+    z-index: 9;
+}
+.img-item{
+    position: absolute;
+    width: 400px;
+    height: 810px;
+    background-color: #f10;
+    transition: all 1.5s;
+    /*设置子元素在3D空间中呈现*/
+    transform-style: preserve-3d;
+}
+/*让图片可以构成一个有四个面的长方体 start*/
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+.img:nth-child(1){
+    background: url(../img/Overwatch/2-1.jpg) no-repeat;
+    transform: rotateX(0deg) translateZ(405px);
+}
+.img:nth-child(2){
+    background: url(../img/Overwatch/timg\ \(1\).jpg) no-repeat;
+    transform: rotateX(-90deg) translateZ(405px);
+}
+.img:nth-child(3){
+    background: url(../img/Overwatch/2-3.jpg) no-repeat;
+    transform: rotateX(-180deg) translateZ(405px);
+}
+.img:nth-child(4){
+    background: url(../img/Overwatch/timg.jpg) no-repeat;
+    transform: rotateX(-270deg) translateZ(405px);
+}
+/*让图片可以构成一个有四个面的长方体 end*/
+.btns{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    margin-top: -35px;
+}

@@ -1,0 +1,955 @@
+/*炉石传说*/
+/*body背景样式*/
+html,body{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/HearthStone/bg.jpg);
+	background-size: 140% 150%;
+	background-position: 40% 25%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+body{
+	overflow-y: scroll;
+}
+/*动画*/
+@media screen and (min-width: 1200px) {
+	bady{
+		width: 100%;
+		overflow-x: scroll;
+	}
+}
+@keyframes move{
+	0{transform: rotate(0);}
+	50%{transform: rotate(15deg);}
+	100%{transform: rotate(0);}
+}
+/*top部分*/
+.top_container{
+	width: 100%;
+	height: 40px;
+	background-color: #2C0903;
+}
+.top{
+	width: 1278px;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+}
+.top-left-logo{
+	width: 65px;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+}
+.top-left-logo img{
+	position: absolute;
+	top: -75px;
+	left: -18px;
+}
+.top-left-nav{
+	position: absolute;
+	top: 10px;
+	left: 62px;
+}
+.top a{
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #ACB7B8;
+	margin-left: 20px;
+	
+}
+.top a:hover{
+	color: white;
+}
+.top-right{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}  
+/*banner部分*/
+.banner{
+	width: 1024px;
+	height: 200px;
+	margin: 0  auto;
+	position: relative;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+}
+.form{
+	margin-top: 130px;
+	margin-right: 20px;
+	float: right;
+	width: 302px;
+	height: 42px;
+	border: 1px solid #A5D2C9 ;
+	position: relative;
+}
+.form_style{
+	width: 100%;
+	height: 100%;
+	outline: 0;
+	border: 0;
+	background-color: rgba(0,0,0,.3);
+	color: white;
+	text-indent: 10px;
+}
+input::placeholder{
+	color: white;
+}
+.form:before{
+	content: "";
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	background: url(../img/HearthStone/Fsearch.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*导航栏*/
+.nav{
+	width: 1024px;
+	height: 52px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/HearthStone/1-2.jpg) no-repeat ;
+}
+.nav-left,.nav-right{
+	width:93px;
+	height: 67px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 5;
+	top: 200px;
+}
+.nav-left{
+	left: -30px;
+	background: url(../img/HearthStone/1-1.png) no-repeat -82px -18px;
+}
+.nav-left1{
+    left: -47px;
+    top: 226px;
+    background: url(../img/HearthStone/1-1.png) no-repeat 0 0;
+    
+}
+.nav-left1:hover{
+	animation: move 1s linear infinite;
+	animation-iteration-count:3;
+}
+.nav-right{
+	right: -33px;
+	background: url(../img/HearthStone/1-1.png) no-repeat -173px -18px;
+}
+.nav-right1:hover{
+	animation: move 1s linear infinite;
+	animation-iteration-count:3;
+}
+.nav-right1{
+	left: 1006px;
+	top: 226px;
+    background: url(../img/HearthStone/1-1.png) no-repeat -286px 0;
+}
+.nav-left1,.nav-right1{
+	content: "";
+    width: 61px;
+    height: 95px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+.nav-list{
+	height: 52px;
+	width: 912px;
+	margin: 0 auto;
+}
+.nav-list li{
+	width: 114px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	display: block;
+	float: left;
+	overflow: hidden;
+	margin-top: 10px;
+	background: url(../img/Diablo3/2-3.png) no-repeat left 0;
+}
+
+
+
+.nav-list li a{
+	display: block;
+	float: left;
+	width: 114px;
+	height: 52px;
+}
+.nav-list li a:hover{
+	background: rgba(0,0,0,.3);
+    box-shadow: 0 0 9px #000 inset;
+}
+.home a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -56px -64px;
+}
+.home a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -56px -12px;
+}
+.news a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -170px -12px;
+}
+.news a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -170px -64px;
+}
+.game a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -284px -12px;
+}
+.game a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -284px -64px;
+}
+.sort a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -398px -12px;
+}
+.sort a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -398px -64px;
+}
+.video a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -512px -12px;
+}
+.video a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -512px -64px;
+}
+.load a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -626px -12px;
+}
+.load a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -626px -64px;
+}
+.sports a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -740px -12px;
+}
+.sports a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -740px -64px;
+    
+}
+.talk a span{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    cursor: pointer;
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -854px -12px;
+}
+.talk a span:hover{
+    background:url(../img/HearthStone/1-2.jpg) no-repeat 0 0;
+    background-position: -854px -64px;
+}
+.nav-left2,.nav-right2{
+	width: 56px;
+	height: 52px;
+	background: url(../img/HearthStone/1-2.jpg) no-repeat -200px 0;
+}
+
+/*-------------主体部分-------------------*/
+
+.substance{
+	width: 1024px;
+	height: 3150px;
+	margin: 0 auto;
+	position: relative;
+}
+.substance .substance-left,.substance .substance-right{
+	position: absolute;
+}
+.substance-left{
+	width: 704px;
+	background-image: url(../img/HearthStone/left_bg.png);
+	background-size: 100% 391px;
+	z-index: 90;
+	top: 0;
+	left: 0;
+}
+/*轮播图*/
+.sliderWarp{
+	width: 630px;
+	height: 300px;
+	border: 1px solid rgb(183,137,76);
+	margin: 0 auto;
+	margin-top: 28px;
+	position: relative;
+}
+.sliderBox{
+	width: 628px;
+	height: 298px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+
+.eyeFrist{
+	margin: 0 auto;
+	margin-top: 35px;
+	width: 630px;
+	height: 220px;
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../img/HearthStone/news-eyes-bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.eyeFrist div{
+	width: 310px;
+	height: 215px;
+	background-image: url(../img/HearthStone/module.png);
+	background-size: 100% 215px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.eyeFrist div img{
+	width: 284px;
+	height: 144px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+.eyeFrist div p{
+	color: #2e1b1e;
+    width: 288px;
+    height: 44px;
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: 44px;
+    margin-top: 4px;
+    overflow: hidden;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.left_item{
+    margin: 0 auto;
+	width: 630px;
+	height: 178px;
+	border-bottom: 1px solid rgba(239,219,168);
+	box-shadow: inset -1px -1px 1px rgb(219,196,151),
+	0px 0px 0px transparent,
+	0px 0px 0px transparent,
+	0px 0px 0px transparent;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.left_item:hover{
+	background-color: rgb(219,196,151);
+}
+.left_item:hover .img_box{
+	background-color: rgb(118,185,0);
+}
+.left_item .img_box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid rgb(183,137,76);
+}
+.left_item .img_box img{
+    display: block;
+    width: 196px;
+    height: 96px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.item_list{
+    margin-left: 20px;
+    width: 390px;
+}
+.item_list_title{
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(0,0,0);
+    line-height: 32px;
+}
+.item_list_content{
+    font-size: 14px;
+    color: rgb(105,87,69);
+    line-height: 20px;
+}
+.item_list_imgBox{
+    margin-top: 18px;
+    display: flex;
+    justify-content: flex-start;
+}
+.list_imgBox{
+    width: 18px;
+    height: 19px;
+    /*background-color: red;*/
+    /*overflow: hidden;*/
+    background-image: url(../img/HearthStone/icons2.png);
+    /*background-repeat: no-repeat;*/
+    background-position: -79px -112px; 
+}
+.listBox_nub{
+    color: rgb(212,83,0);
+    margin-left: 4px;
+}
+.listBox_time{
+    color: rgb(105,87,69);
+    margin-left: 12px;
+}
+.left_end{
+	height: 120px;
+}
+.moreBox{
+	width: 640px;
+	height: 40px;
+	margin: 0 auto;
+	border: 2px solid rgb(241,219,184);
+	background-color: rgba(0,0,0,.1);
+	text-align: center;
+	line-height: 40px;
+	color: rgb(91,75,56);
+}
+.moreBox span{
+	display: inline-block;
+	width: 10px;
+	height: 8px;
+	background-image: url(../img/HearthStone/icons2.png);
+	background-position: -132px -142px;
+	background-repeat: no-repeat;
+	transform: rotate(90deg);
+	margin-left: 10px;
+}
+.bot{
+	position: absolute;
+	bottom: -8px;
+	width: 100%;
+	
+}
+
+
+/*----------主体内容右侧--------*/
+.substance-right{
+   width: 330px;
+   background-image: url(../img/HearthStone/homeconbar-bg.png);
+   background-size: 100% 87px;
+   z-index: 30;
+   margin-left: -11px;
+   top: 0;
+   right: 3px;
+}
+.substance-right .right_first{
+   width: 320px;
+   height: 605px;
+   background-image: url(../img/HearthStone/1-10.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   z-index: -1;
+   overflow: hidden;
+   /*margin-left: -1px;*/
+}
+.right_first .right_fist_img{
+	width: 320px;
+	margin-top: -10px;
+}
+.right_first .appIcons{
+	height: 297px;
+	height: 105px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.right_first .appIcons .device{
+	width: 70px;
+	height: 80px;
+	overflow: hidden;
+	margin: 0 4px;
+	background-image: url(../img/HearthStone/1-3.png);
+	background-size: 210px 242px;
+	background-repeat: no-repeat;
+}
+.right_first .appIcons .pc{
+	background-position: 1px -160px;
+}
+.right_first .appIcons .ios{
+	background-position: -70px 1px;
+}
+
+.right_first .appIcons .andriod{
+	background-position: -140px 1px;
+	margin-right: -5px;
+}
+.download{
+	width: 220px;
+	height: 61px;
+	overflow: hidden;
+	background-image: url(../img/HearthStone/1-4.png);
+	background-repeat: no-repeat;
+	background-size: 220px;
+	background-position: 10px -20px;
+	margin: 0 auto;
+}
+
+
+/*right_top_item*/
+.right_top_item{
+	width: 305px;
+	height: 265px;
+	background-image: url(../img/HearthStone/moudel-top-bg.jpg);
+	background-size: 100% 150px;
+	background-repeat: no-repeat;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.anTend{
+	height: 236px;
+}
+.anTendTo{
+	margin-top: -15px;
+	height: 276px;
+}
+.right_top_title{
+	width: 265px;
+	height: 30px;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 50px;
+}
+.right_top_title .right_top_titleBg{
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/HearthStone/icons2.png);
+	background-repeat: no-repeat;
+	background-position: -88px -3px;
+}
+.right_top_title .send_two{
+	background-position: -47px -74px;
+}
+.right_top_title  .right_top_item_titleTxt{
+	font-weight: 800;
+	color: rgb(3,52,95);
+	line-height: 30px;
+}
+.right_top_item .right_topImg{
+	width: 244px;
+	height: 124px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.right_top_oneContent{
+	font-weight: 800;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.right_top_item_row{
+	width: 265px;
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	line-height: 32px;
+	border-bottom: 1px solid rgb(232,214,168);
+	cursor: pointer;
+}
+.right_top_item_row:hover .btn_left{
+	background-position: -132px -107px;
+}
+.right_top_item_row:hover .txt_right{
+	color: rgb(226,44,20);
+}
+.btn_left{
+	display: block;
+	margin-top: 7px;
+	width: 10px;
+	height: 12px;
+	background-image: url(../img/HearthStone/icons2.png);
+	background-position: -132px -137px;
+}
+.txt_right{
+	margin-left: 10px;
+	font-size: 13px;
+	font-weight: 300;
+}
+.more_img{
+	text-align: right;
+	line-height: 35px;
+}
+.more_img img{
+	margin-right: 20px;
+}
+
+/*充值*/
+.item_modoul{
+	width: 260px;
+	height: 52px;
+	border: 1px solid rgb(239,212,173);
+	margin: 0 auto;
+	margin-top: 14px;
+	background-color: rgba(0,0,0,.1);
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.item_modoul_title{
+	font-weight: 700;
+	text-indent: 10px;
+	font-size: 15px;
+	line-height: 17px;
+	width: 100%;
+}
+.item_modoul_url{
+	color: rgb(118,86,61);
+	text-indent: 10px;
+	font-size: 12px;
+}
+.item_modoul_img{
+	position: absolute;
+	top: -15px;
+	right: 0;
+	width: 84px;
+	height: 66px;
+	overflow: hidden;
+	background-image: url(../img/HearthStone/icons3.png);
+	background-repeat: no-repeat;
+	background-size: 75px;
+}
+.modoul_img{
+    background-position: 0px -244px;
+}
+.modoul_img2{
+	background-size: 70px;
+	background-position: 0px -746px;
+}
+.modoul_img3{
+	background-size: 70px;
+	background-position: 0px -848px;
+}
+.modoul_img4{
+	background-size: 84px;
+	background-position: 0px -1130px;
+}
+.modoul_img5{
+	background-size: 65px;
+	background-position: 5px -1262px;
+}
+.modoul_img6{
+	top: -5px;
+	background-size: 73px;
+	background-position: 0px -1783px;
+}
+.modoul_img7{
+	top: -5px;
+	background-size: 65px;
+	background-position: 0px -400px;
+}
+.modoul_img8{
+	background-size: 70px;
+	background-position: 3px -1122px;
+}
+.right_footer{
+	width: 305px;
+	height: 311px;
+	background-image: url(../img/HearthStone/moudel-top-bg.jpg);
+	background-size: 100% 150px;
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	overflow: hidden;
+}
+.right_footer .right_top_titleBg{
+	background-position: -4px -186px;
+}
+
+
+/*微信，新浪*/
+.app_logo_row{
+	width: 305px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.send,.sendTo{
+	display: flex;
+	width: 126px;
+	/*justify-content: center;*/
+}
+.send .weixin_logo,.sendTo .sina_logo,.phone{
+	width: 42px;
+	height: 42px;
+	background-image: url(../img/HearthStone/3-2.png);
+	background-repeat: no-repeat;
+}
+.weixin_logo{
+	background-position: -370px -1px;
+}
+.weixin_name{
+	margin-left: 10px;
+	font-size: 14px;
+}
+.sina_logo{
+	background-position: -206px -1px;
+}
+.sina_name{
+	margin-left: 5px;
+	font-size: 14px;
+	line-height: 32px;
+}
+.sendLine{
+	width: 1px;
+	height: 35px;
+	border-right: 1px dashed rgb(102,86,61);
+	margin: 0 10px;
+}
+/*手机app*/
+.sendtree{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+.phone{
+	background-position: -455px -1px;
+}
+/*官方邮箱*/
+.email{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.email_txt,.tel{
+	font-size: 15px;
+	font-weight: 700;
+	
+}
+.email_url,.telNumber{
+	margin-top: 5px;
+	font-size: 13px;
+	font-weight: 300;
+}
+.email_line{
+	margin-top: 25px;
+	width: 1px;
+	height: 30px;
+	border-right: 1px dashed rgb(0,0,0);
+	margin: 0 20px;
+}
+.right_end{
+	position: absolute;
+	right: 0;
+	bottom: -10px;
+	width: 100%;
+	z-index: -20;
+}
+
+/*--------------页脚------------*/
+footer{
+	width:100%;
+	height: 437px;
+	background-image: url(../img/HearthStone/footer.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+	padding-top: 35px;
+}
+.out{
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	margin-left: -174.5px;
+	z-index: 20;
+}
+.regsiter{
+	width: 249px;
+	height: 83px;
+	position: absolute;
+	z-index: 30;
+	left: 50%;
+	margin-left: -124.5px;
+	top: -20px;
+	background-image: url(../img/HearthStone/3-1.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.regsiter:hover{
+	background-position: 0px -84px;
+}
+/**/
+.footNav{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.footLeft,.footRight{
+	list-style: none;
+	display: flex;
+	margin: 0 180px;
+}
+.footLeft li,.footRight li{
+	font-size: 14px;
+	color: rgb(255,255,255);
+}
+.navList_img{
+	width: 19px;
+	height: 19px;
+	background-image: url(../img/HearthStone/icons.png);
+	background-repeat: no-repeat;
+	margin-left: 35px;
+	margin-right: 15px;
+}
+.set1{
+	background-position: -6px -7px;
+}
+.set2{
+	background-position: -34px -7px;
+}
+.set3{
+	background-position: -6px -32px;
+}
+
+
+
+.navList2_img{
+	width: 95px;
+	height: 31px;
+	background-image: url(../img/HearthStone/3-7.png);
+	background-repeat: no-repeat;
+	background-position: -350px -1px;
+}
+.addIcon,.addAbout{
+	width: 18px;
+	height: 18px;
+	border: 1px solid rgb(45,23,2);
+	background-color: rgb(36,17,1);
+	position: relative;
+}
+.addAbout{
+	background-image: url(../img/HearthStone/icons2.png);
+	background-repeat: no-repeat;
+	background-position: -132px -108px;
+	transform: rotate(90deg);
+}
+.line_h{
+	width: 10px;
+	height: 1px;
+	position: absolute;
+	top: 8px;
+	left: 4px;
+	border-top: 1.5px solid rgb(172,119,31);
+}
+.line_s{
+	width: 1px;
+	height: 10px;
+	position: absolute;
+	top: 4px;
+	left: 8px;
+	border-left: 1.5px solid rgb(172,119,31);
+}
+.leng{
+	margin: 0 8px;
+}
+
+.footContent{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+.footContent_logo{
+	/*width: 420px;*/
+	display: flex;
+	overflow: hidden;
+}
+.footContent_logo img{
+	display: block;
+}
+.footContent_logo img:nth-of-type(2){
+	width: 125px;
+	height: 38px;
+	margin-top: 40px;
+}
+
+.footContent_right{
+	margin-left: 70px;
+}
+.footContent_right ul{
+	overflow: hidden;
+	margin-left: 70px;
+}
+.footContent_right ul li{
+	float: left;
+}
+.footContent_right .footApi li{
+	color: rgb(255,255,255);
+	margin: 0 8px;
+	list-style: none;
+}
+.footContent_right .copy li,.footContent_right .inter li,.footContent_right .footTel li,.footContent_right .man_logo li{
+	color: rgb(85,44,9);
+	font-size: 13px;
+	margin: 4px 3px;
+}
+.man_logo{
+	line-height: 38px;
+}
+.end{
+	text-align: center;
+	color: rgb(56,41,13);
+}
+
+
+
+
+

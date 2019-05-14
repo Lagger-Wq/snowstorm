@@ -1,0 +1,201 @@
+@media screen and (min-width: 1200px) {
+	bady {
+		width: 100%;
+	}
+}
+body{
+	min-width: 1200px;
+}
+/*头部部分*/
+header{
+	width: 100%;
+	min-width: 1280px;
+	height: 518px;
+	background:url(../img/index/bg-top.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+/*顶部导航栏*/
+.container_top{
+	width: 100%;
+	min-width: 1280px;
+	overflow: hidden;
+	border-bottom: 1px solid #3F4041;
+}
+.top {
+	width: 1280px;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+
+.top-left-logo {
+	width: 65px;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.top-left-logo img {
+	position: absolute;
+	top: -75px;
+	left: -18px;
+}
+
+.top-left-nav {
+	position: absolute;
+	top: 10px;
+	left: 62px;
+}
+
+.top a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #ACB7B8;
+	margin-left: 20px;
+}
+
+.top a:hover {
+	color: white;
+}
+
+.top-right {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+/*banner*/
+.banner_contanier_index{
+	width: 100%;
+	min-width: 1280px;
+}
+.banner-index{
+	width: 1280px;
+	margin: 0 auto;
+}
+.banner-index p:nth-of-type(3){
+	width: 130px;
+	height: 34px;
+	line-height: 34px;
+	background-color: #007DB0;
+	color: white;
+	margin-top: 40px;
+	text-align: center;
+}
+header p:nth-of-type(2){
+	font-size: 25px;
+	color: #A2B9C2;
+	width: 644px;
+	margin-top: 50px;
+}
+header p:nth-of-type(2):hover{
+	color: white;
+}
+/*链接*/
+.index_content_contanier{
+	width: 1280px;
+	height: 394px;
+	margin: 0 auto;
+	margin-top: -145px;
+}
+.index_content{
+	width: 1280px;
+	height: 394px;
+	display: flex;
+	justify-content: space-between;
+}
+.index_content a{
+	text-decoration: none;
+	display: block;
+}
+.img_item_index{
+	width: 164px;
+	height: 394px;
+}
+.img_item_index p{
+	color: #B2BAAB;
+	width: 164px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #282E36;
+}
+.img_item_index:hover>p{
+	color: white;
+	background-color: #313841;
+}
+.img_item_index:hover .index_shade{
+	display: block;
+}
+.index_shade{
+	display: none;
+	width: 164px;
+	height: 300px;
+	background-color: rgb(255,255,255,.2);
+}
+.item{
+	width: 164px;
+	height: 300px;
+}
+.wow{
+	background: url(../img/index/wow-cn.png) no-repeat 2px -70px;
+}
+.Warcraft{
+	background: url(../img/index/05.jpg) no-repeat -20px 0;
+	background-size: 130% 120%;
+}
+.StormHero{
+	background: url(../img/index/heroes-cn.png) no-repeat 2px -70px;
+}
+.HearthStone{
+	background: url(../img/index/hearthstone-cn.png) no-repeat 2px -70px;
+}
+.Overwatch{
+	background: url(../img/index/overwatch.png) no-repeat 2px -70px;
+}
+.Diablo3{
+	background: url(../img/index/diablo3-cn.png) no-repeat 2px -70px;
+}
+.Diablolmmoral{
+	background: url(../img/index/06.jpg) no-repeat -20px -12px;
+	background-size: 130% 115%;
+}
+/*footer部分*/
+.foot{
+	width: 100%;
+	min-width: 1280px;
+	height:400px;
+	background-color: black;
+	overflow: hidden;
+}
+.foot_img_contanier{
+	width: 124px;
+	height: 65px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.foot_img_contanier a{
+	width: 124px;
+	height: 65px;
+	background: url(../img/Warcraft/7-3.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	margin: 0 auto;
+}
+.foot_bigfont{
+	text-align: center;
+	color: #CCCCCC;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.foot_text_item{
+	color: #79706A;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.foot p{
+	text-align: center;
+}

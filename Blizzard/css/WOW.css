@@ -1,0 +1,621 @@
+/*魔兽世界*/
+/*共同样式*/
+/**{
+	box-sizing: border-box;
+}*/
+body{
+	min-width: 1200px;
+	background-color: rgb(0,0,0);
+}
+@font-face {
+	font-family:lol;
+	src: url(../fontFace/iconfont.ttf),url(../fontFace/iconfont.eot),url(../fontFace/iconfont.woff);
+}
+@font-face {
+	font-family:search;
+	src: url(../css/iconfont/iconfont.ttf);
+}
+/*顶部导航*/
+.head_nav{
+	width:100%;
+	height: 40px;
+	background-color: rgb(0,0,0);
+	display: flex;
+	justify-content: flex-start;
+	font-size: 15px;
+	color: rgb(178,179,180);
+	line-height: 40px;
+	position: relative;
+}
+.head_nav div{
+	margin-left: 35px;
+	cursor: pointer;
+}
+.head_nav .my{
+	position: absolute;
+	top: 0;
+	right: 70px;
+}
+.head_nav .my span{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	font-size: 25px;
+	transform: rotate(90deg);
+}
+.head_nav .support{
+	position: absolute;
+	top: 0;
+	right: 160px;
+}
+.head_nav div:hover{
+	color: rgb(255,255,255);
+	text-shadow: 0 0 15px rgb(255,255,255);
+}
+.head_nav .logo{
+	width: 100px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+}
+.head_nav .logo img{
+	position: absolute;
+	bottom: -5px;
+}
+/*动画、二级导航栏*/
+.banner{
+	width: 100%;
+	height: 1055px;
+	position: relative;
+	overflow: hidden;
+}
+/*动画*/
+.video{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+/*导航*/
+.nav{
+	font-family: search;
+	width: 1300px;
+	height: 90px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -630px;
+	display: flex;
+	z-index: 2;
+	justify-content: space-between;
+	background-color: rgb(34,19,16);
+	color: rgb(228,171,42);
+	box-shadow: inset 1px 0 0 1px rgb(51,33,27);
+	transition: all 0.5s linear;
+	font-weight: 700;
+}
+.nav_left{
+	display: flex;
+	justify-content: flex-start;
+}
+.nav .wow_logo{
+	width: 290px;
+	height: 120px;
+	margin-top: -15px;
+	margin-left: -100px;
+}
+.nav_left div{
+	height: 90px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 90px;
+	cursor: pointer;
+}
+.nav_left div:nth-of-type(1){
+	margin-left: 25px;
+	width: 70px;
+	border-left: 1px solid rgb(24,15,11);
+	box-shadow: inset 1px 0 0 1px rgb(51,33,27),
+	0 0 0 transparent,
+	0 0 0 transparent,
+	0 0 0 transparent;
+}
+.nav_left div:nth-of-type(2){
+	width: 100px;
+	border-left: 1px solid rgb(24,15,11);
+	box-shadow: inset 1px 0 0 1px rgb(51,33,27),
+	0 0 0 transparent,
+	0 0 0 transparent,
+	0 0 0 transparent;
+}
+.nav_left div:nth-of-type(3){
+	width: 60px;
+	border-left: 1px solid rgb(24,15,11);
+	box-shadow: inset 1px 0 0 1px rgb(51,33,27),
+	0 0 0 transparent,
+	0 0 0 transparent,
+	0 0 0 transparent;
+}
+.nav_left div:nth-of-type(4){
+	width: 60px;
+	border-left: 1px solid rgb(24,15,11);
+	box-shadow: inset 1px 0 0 1px rgb(51,33,27),
+	0 0 0 transparent,
+	0 0 0 transparent,
+	0 0 0 transparent;
+}
+.nav_left div:nth-of-type(5){
+	width: 60px;
+	border-left: 1px solid rgb(24,15,11);
+	box-shadow: inset 1px 0 0 1px rgb(51,33,27),
+	0 0 0 transparent,
+	0 0 0 transparent,
+	0 0 0 transparent;
+}
+.nav_left .nav_title:hover{
+	color: rgb(255,255,255);
+	text-shadow: 0 0 15px rgb(255,255,255);
+}
+.nav .nav_left .nav_To{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	border: 0;
+}
+#sert{
+	width: 120px;
+	background-color: rgb(69,19,12);
+}
+.nav .nav_left .nav_To div:hover{
+	color: rgb(255,255,255);
+}
+
+/*---------------------留着------*/
+.nav_right{
+	
+}
+.banner_title{
+	font-size: 52px;
+	line-break: 70px;
+	font-weight: 900;
+	color: rgb(255,255,255);
+	margin-top: 270px;
+	margin-left: 30px;
+}
+.banner_content{
+	margin-left: 30px;
+	margin-top: 50px;
+	width: 650px;
+	line-height: 40px;
+	color: rgb(235,222,194);
+	font-size: 20px;
+}
+.banner_href{
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 20px;
+	text-decoration: underline;
+	color: rgb(235,222,194);
+	cursor: pointer;
+}
+.banner_btn{
+	margin-top: 40px;
+	display: flex;
+	justify-content: flex-start;
+}
+.banner_btn div {
+	width: 180px;
+	height: 50px;
+	margin-left: 30px;
+	text-align: center;
+	color: rgb(247,177,10);
+	line-height: 50px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.banner_btn .banner_register{
+	border: 1px solid rgb(234,48,18);
+	background-color: rgba(255,0,0,.5);
+}
+.banner_btn .banner_register:hover{
+	background-color: rgb(255,0,0,.7);
+}
+.banner_btn .banner_more{
+	border: 1px solid rgb(247,177,10);
+}
+.banner_btn .banner_more:hover{
+	border-color: rgb(0,0,0);
+	background-color: rgb(176,102,1);
+}
+.banner_new{
+	margin-top: 110px;
+}
+.banner_new .banner_new_title{
+	margin-left: 30px;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 40px;
+	color: rgb(255,255,255);
+}
+.banner_new .banner_new_title span{
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 10px;
+	color: rgb(247,177,10);
+}
+
+.new{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+.new .banner_item{
+	width: 300px;
+	height: 200px;
+	margin: 0 15px;
+	border: 0.5px solid rgb(80,65,55);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition: .1s linear;
+	cursor: pointer;
+}
+.new .banner_item:hover{
+	border-color: rgb(247,177,10);
+}
+.new .banner_item:hover .activity_content{
+	color: rgb(255,255,255);
+}
+.activity_title{
+	width: 260px;
+	margin-left: 20px;
+	margin-top: 110px;
+	color: rgb(202,202,202);
+	font-size: 14px;
+}
+.activity_content{
+	width: 260px;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: rgb(247,177,10);
+}
+
+
+/*frist*/
+.frist{
+	width: 100%;
+	height: 370px;
+	background-image: url(../img/WOW/2-1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.frist_title{
+	font-size: 55px;
+	color: rgb(255,255,255);
+	margin-left: 140px;
+	margin-top: 90px;
+}
+.frist_content{
+	width: 600px;
+	margin-left: 140px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: rgb(235,222,194);
+}
+.frist_href{
+	margin-top: 40px;
+	margin-left: 140px;
+	width: 175px;
+	height: 50px;
+	border: 1px solid rgb(234,48,18);
+	text-align: center;
+	line-height: 50px;
+	background-color: rgba(255,0,0,.5);
+	color: rgb(247,177,10);
+	cursor: pointer;
+}
+.frist_href:hover{
+	background-color: rgba(255,0,0,.7);
+}
+
+/*secound*/
+.secound{
+	margin-top: 5px;
+	width: 100%;
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-content: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	text-align: right;
+}
+.secound_img{
+	position: absolute;
+	top: 0;
+	left: -30%;
+	z-index: -1;
+	width: 160%;
+	height: 110%;
+}
+.secound p{
+	color: rgb(255,255,255);
+}
+.item_pTitle{
+	width: 100%;
+	margin-right: 150px;
+	font-size: 55px;
+	font-weight: 800;
+	color: rgb(255,255,255);
+}
+.item_pContent{
+	margin-top: 30px;
+	width: 600px;
+	font-size: 17px;
+	margin-right: 150px;
+	display: inline-block;
+	line-height: 25px;
+	color: rgb(255,255,255);
+}
+.item_pHref{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.item_pHref a{
+	display: block;
+	margin-right: 150px;
+	margin-top: 30px;
+	width: 175px;
+	height: 50px;
+	border: 1px solid rgb(247,177,10);
+	color: rgb(247,177,10);
+	font-size: 17px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+}
+.item_pHref a:hover{
+	background-color: rgb(176,102,1);
+}
+
+/*thirth*/
+.thirth{
+	margin-top: 5px;
+	width: 100%;
+	height: 370px;
+	background-image: url(../img/WOW/2-3.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	display: flex;
+	align-content: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	text-align: right;
+}
+
+/*fourth*/
+.fourth{
+	margin-top: 5px;
+	width: 100%;
+	height: 480px;
+	background-image: url(../img/WOW/2-4.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	display: flex;
+	align-content: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	text-align: right;
+}
+
+/*fifth*/
+.fifth{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.fifth_item{
+	width: -webkit-calc(50% - 3.5px);
+	width: calc(50%-2.5px);
+	height: 495px;
+	margin-top: 5px;
+	border: 0.5px solid rgb(80,65,55);
+	background-color: rgb(33,21,16);
+	text-align: center;
+}
+.fifth_item:hover{
+	border-color: rgb(247,177,10);
+}
+.fifth_img{
+	display: block;
+	width: -webkit-calc(100% - 1px);
+	height: 375px;
+}
+.fifth_item_title{
+	font-size: 15px;
+	color: rgb(255,255,255);
+	margin-top: 30px;
+}
+.border_right .fifth_img{
+	margin-left: 0.5px;
+}
+.fifth_item_content{
+	font-size: 32px;
+	font-weight: 700;
+	color: rgb(247,177,10);
+	margin-top: 10px;
+}
+
+/*sixth*/
+.sixth{
+	margin-top: 5px;
+	width: 100%;
+	height: 420px;
+	background-image: url(../img/WOW/4-1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.sixth p{
+	margin-left: 150px;
+}
+.item_aHref{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 40px;
+}
+.all{
+	display: block;
+	width: 180px;
+	height: 50px;
+	border: 1px solid rgb(247,177,10);
+	text-decoration: none;
+	color: rgb(247,177,10);
+}
+.all:hover{
+	background-color: rgb(247,177,10);
+	color: rgba(255,255,255,.7);
+}
+.buy{
+	width: 200px;
+	height: 50px;
+	border:1px solid rgb(234,48,18);
+	background-color: rgba(255,0,0,0.5);
+	margin-left: 35px;
+	color: rgb(247,177,10);
+	text-decoration: none;
+}
+.buy:hover{
+	background-color: rgba(255,0,0,0.7);
+}
+
+/*seventh*/
+.seventh{
+	margin-top: 5px;
+	width: 100%;
+	height: 85px;
+	border: 0.5px solid rgb(50,43,40);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 85px;
+	background-color: rgb(31,23,20);
+}
+.seventh_txt{
+	font-family: lol;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 85px;
+	color: rgb(255,255,255);
+}
+.seventh_txt span{
+	font-size: 45px;
+	line-height: 85px;
+	color: rgb(255,255,255);
+	margin: 0 7px;
+	cursor: pointer;
+}
+.seventh_txt span:hover{
+	color: rgb(247,177,10);
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	overflow: hidden;
+	background-color: rgb(21,13,10);
+}
+.footTitle{
+	margin-top: 65px;
+}
+.foot_nav{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.foot_nav .nav_name,.foot_nav .nav_line{
+	margin: 0 10px;
+	color: rgb(181,179,178);
+	display: inline-block;
+	line-height: 25px;
+}
+.foot_nav .nav_name{
+	font-size: 17px;
+	cursor: pointer;
+}
+.foot_nav .nav_name:hover{
+	color: rgb(255,255,255);
+}
+.foot_nav .nav_line{
+	width: 1px;
+	height: 10px;
+	font-size: 12px;
+	/*border-right: 1px solid rgb(181,179,178);*/
+}
+.foot_copy,.about_name{
+	color: rgb(92,86,84);
+	font-size: 14px;
+	margin-top: 5px
+}
+.foot_copy{
+	margin-top: 20px;
+}
+.foot_about{
+	display: flex;
+	justify-content: center;
+	color: rgb(89,84,82);
+	margin-top: 5px;
+}
+.foot_about p{
+	margin: 0 5px;
+	font-size: 12px;
+}
+.foot_about img{
+	width: 30px;
+	height: 30px;
+	margin: 8px 4px;
+}
+.foot_about .hide{
+	cursor: pointer;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: rgb(185,183,182);
+}
+.foot_about .hide:hover{
+	color: rgb(255,255,255);
+}
+.foot_about .number:hover{
+	color: rgb(255,255,255);
+	cursor: pointer;
+}
+.foot_about .tips{
+	cursor: pointer;
+	color: rgb(173,170,169);
+}
+.foot_about .tips:hover{
+	color: rgb(255,255,255);
+}
+
